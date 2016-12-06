@@ -1,0 +1,39 @@
+/*
+ Theme Name:   Lundgrnsmat
+ Theme URI:    http://www.lundgrensmat.se
+ Description:  Lundgrensmat
+ Author:       Oscar Lundgren
+ Author URI:   http://www.lundgrensmat.se
+ Template:     understrap
+ Version:      0.1.5
+ License:      Commercial
+ Text Domain:  lundgrensmat
+*/
+
+.header-image {
+	height: 500px;
+	background: url('http://128.199.38.207/wp-content/uploads/2016/09/grill.jpg');
+	margin-top: -155px;
+	background-size: cover;
+}
+
+.bg-inverse {
+	z-index: 1;
+	height: 150px !important;
+	background: rgba(255, 255, 255, 0);
+}
+
+.entry-header {
+	margin-top: -300px;
+	text-align: center;
+	color: white;
+}
+
+ul#main-menu {
+	color: grey !important;
+}
+
+
+.edit-link {
+	display: none;
+}
