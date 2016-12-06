@@ -33,7 +33,7 @@ get_header(); ?>
 		<?php the_content(); ?>
 		<img src="<?php the_field('receptbilder'); ?>" alt="" />
 		<p><strong>Antal portioner: </strong><?php the_field('hur_manga_portioner'); ?></p>
-		<p><strong>Förberedelser: </strong><?php the_field('forberedelser'); ?></p>
+		<p><strong>Förberedelser: </strong><?php the_field('foreberedelser'); ?></p>
 		<p><strong>Tillagningstid: </strong><?php the_field('tillagningstid'); ?></p>
 		<?php
 			
@@ -50,7 +50,7 @@ get_header(); ?>
 <?php 
 	// Gör så här
 		if( have_rows('gor_sa_har') ): ?>
-		<strong>Ingredienser: </strong>
+		<strong>Gör så här: </strong>
     <ul>
     <?php while( have_rows('gor_sa_har') ): the_row(); ?>
         <li><?php the_sub_field('steg'); ?></li>
