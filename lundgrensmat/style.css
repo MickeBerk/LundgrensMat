@@ -19,7 +19,7 @@
 
 .bg-inverse {
 	z-index: 1;
-	height: 150px !important;
+	height: 150px;
 	background: rgba(255, 255, 255, 0);
 }
 
@@ -30,7 +30,8 @@
 }
 
 ul#main-menu {
-	color: grey !important;
+	color: grey;
+	height: 100px; 
 }
 
 

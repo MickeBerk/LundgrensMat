@@ -10,8 +10,9 @@
  *
  * @package understrap
  */
-
-get_header(); ?>
+?>
+<?php acf_form_head(); ?>
+<?php get_header(); ?>
 
     <?php
     if ( is_front_page() && is_home() ) {
@@ -58,7 +59,22 @@ get_header(); ?>
                         <?php get_template_part( 'loop-templates/content', 'none' ); ?>
                         
                     <?php endif; ?>
-                        
+                        <?php acf_form( $options = array(
+            'id'                    => 'ad-form',
+            'post_id'               => false,
+            'new_post'              => false,
+            'field_groups'          => false,
+            'fields'                => false,
+            'post_title'            => false,
+            'post_content'          => false,
+            'form'                  => true,
+            'submit_value'          => __("Uppdatera recept", 'acf'),
+            'label_placement'       => 'top',
+            'instruction_placement' => 'label',
+            'field_el'              => 'div',
+            'uploader'              => 'wp',
+            'honeypot'              => true
+            )); ?>
                     </main><!-- #main -->
                    
     	       </div><!-- #primary -->

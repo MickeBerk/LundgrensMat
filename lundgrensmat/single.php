@@ -11,7 +11,7 @@
 <div class="wrapper" id="single-wrapper">
     
     <div  id="content" class="container">
-
+    	
         <div class="row">
         
             <div id="primary" class="<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>col-md-8<?php else : ?>col-md-12<?php endif; ?> content-area">
@@ -65,7 +65,22 @@
 		<?php endwhile; ?>
 		</div>
 
-	<?php acf_form(); ?>
+	<?php acf_form( $options = array(
+			'id'					=> 'ad-form',
+			'post_id'				=> false,
+			'new_post'				=> false,
+			'field_groups'			=> false,
+			'fields'				=> false,
+			'post_title'			=> false,
+			'post_content'			=> false,
+			'form'					=> true,
+			'submit_value'			=> __("Uppdatera recept", 'acf'),
+			'label_placement'		=> 'top',
+			'instruction_placement'	=> 'label',
+			'field_el'				=> 'div',
+			'uploader'				=> 'wp',
+			'honeypot'				=> true
+			)); ?>
 
                 </main><!-- #main -->
                 

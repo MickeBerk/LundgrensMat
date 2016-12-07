@@ -20,11 +20,8 @@
     
                 <footer id="colophon" class="site-footer" role="contentinfo">
 
-                    <div class="site-info">
-                        <a href="<?php echo esc_url( __( 'http://wordpress.org/', 'understrap' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'understrap' ), 'WordPress' ); ?></a>
-                        <span class="sep"> | </span>
-                        <?php printf( __( 'Theme: %1$s by %2$s.', 'understrap' ), 'understrap', '<a href="http://understrap.com/" rel="designer">understrap.com</a>' ); ?> 
-                        (<?php printf( __( 'Version', 'understrap' ) ); ?>: 0.4.6)
+                    <div class="site-info footer-info">
+                        <span>&copy; Lightweb AB</span>
                     </div><!-- .site-info -->
 
                 </footer><!-- #colophon -->
