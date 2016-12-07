@@ -4,8 +4,10 @@
  * Template Name: Recept
  * @package understrap
  */
+?>
 
-get_header(); ?>
+<?php acf_form_head(); ?>
+<?php get_header(); ?>
 <div class="wrapper" id="single-wrapper">
     
     <div  id="content" class="container">
@@ -37,7 +39,7 @@ get_header(); ?>
 		<p><strong>Tillagningstid: </strong><?php the_field('tillagningstid'); ?></p>
 		<?php
 			
-		// Ingredienser
+	// Ingredienser
 		if( have_rows('ingredienser') ): ?>
 		<strong>Ingredienser: </strong>
     <ul>
@@ -62,6 +64,8 @@ get_header(); ?>
 		
 		<?php endwhile; ?>
 		</div>
+
+	<?php acf_form(); ?>
 
                 </main><!-- #main -->
                 
