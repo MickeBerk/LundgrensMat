@@ -6,7 +6,7 @@
  *
  * @package understrap
  */
-
+acf_form_head();
 get_header(); ?>
 
 <div class="wrapper" id="archive-wrapper">
@@ -30,7 +30,16 @@ get_header(); ?>
 
                         <?php /* Start the Loop */ ?>
                         <?php while ( have_posts() ) : the_post(); ?>
-
+                            <?php  
+                                acf_form( $options = array(
+                                    'post_id'       => 'new_post',
+                                    'new_post'      => array(
+                                        'post_type'     => 'recept',
+                                        'post_status'       => 'publish'
+                                    ),
+                                    'post_title'    => true,
+                                    'submit_value'      => 'Skapa nytt recept'
+                                )); ?>
                             <?php
                                 /* Include the Post-Format-specific template for the content.
                                  * If you want to override this in a child theme, then include a file
