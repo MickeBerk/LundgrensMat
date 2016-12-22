@@ -59,7 +59,7 @@
                         <?php get_template_part( 'loop-templates/content', 'none' ); ?>
                         
                     <?php endif; ?>
-                    
+             
                     </main><!-- #main -->
                    
     	       </div><!-- #primary -->
@@ -72,4 +72,4 @@
         
     </div><!-- Wrapper end -->
 
-<?php get_footer(); ?>
+<?php /*get_footer();*/ ?>

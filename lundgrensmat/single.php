@@ -13,7 +13,6 @@
         <div class="row">
             <div id="primary" class="<?php if ( is_active_sidebar( 'sidebar-1' ) ) : ?>col-md-8<?php else : ?>col-md-12<?php endif; ?> content-area">                
                 <main id="main" class="site-main" role="main">
-                	// Start the loop.
                     <?php
 					$query = new WP_Query( array('post_type' => 'recept', 'posts_per_page' => 5 ) );
 					while ( have_posts() ) : the_post(); ?>
@@ -53,23 +52,6 @@
 		<?php endwhile; ?>
 		</div>
 
-	<?php acf_form( $options = array(
-			'id'					=> 'ad-form',
-			'post_id'				=> false,
-			'new_post'				=> false,
-			'field_groups'			=> false,
-			'fields'				=> false,
-			'post_title'			=> false,
-			'post_content'			=> false,
-			'form'					=> true,
-			'submit_value'			=> __("Uppdatera recept", 'acf'),
-			'label_placement'		=> 'top',
-			'instruction_placement'	=> 'label',
-			'field_el'				=> 'div',
-			'uploader'				=> 'wp',
-			'honeypot'				=> true
-			)); ?>
-
                 </main><!-- #main -->
                 
             </div><!-- #primary -->
@@ -82,4 +64,4 @@
     
 </div><!-- Wrapper end -->
 
-<?php get_footer(); ?>
+<?php /* get_footer(); */ ?>

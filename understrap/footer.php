@@ -12,7 +12,7 @@
 
 <div class="wrapper" id="wrapper-footer">
     
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row">
 
@@ -21,7 +21,7 @@
                 <footer id="colophon" class="site-footer" role="contentinfo">
 
                     <div class="site-info footer-info">
-                        <span>&copy; Lightweb AB</span>
+                        <span></span>
                     </div><!-- .site-info -->
 
                 </footer><!-- #colophon -->

@@ -1,10 +1,8 @@
 <?php
 /**
- * The template for displaying archive pages.
  *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ * The template for displaying archive pages. 
  *
- * @package understrap
  */
 acf_form_head();
 get_header(); ?>

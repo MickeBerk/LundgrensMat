@@ -1,9 +1,21 @@
-body {
-	background-color: purple;
+.main-bg {
+	background: url(http://192.168.33.50/site/wp-content/uploads/sallad.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 55vh;
+	margin-top: -30px;
+}
+
+.main-bg-wrapper {
+	padding-right: 0;
+	padding-left: 0;
+}
+
+.container-fluid {
+	padding-right: 0;
+	padding-left: 0;
 }
 
 .bg-inverse {
-	color: grey !important;
 	height: 100px !important; 
 }
 
@@ -13,7 +25,7 @@ body {
 }
 
 #main-menu {
-	margin-top: 20px;
+	margin-top: 23px;
 	float: right !important;
 }
 
@@ -22,3 +34,98 @@ body {
 	margin-top: 300px !important;
 }
 
+#full-width-page-wrapper {
+	height: 900px;
+}
+
+.navbar {
+	background-color: #52C958 !important;
+	box-shadow: 0px 6px 20px black;
+}
+
+.navbar-brand {
+	font-family: 'Dancing Script', cursive;
+	font-size: 1.8em;
+}
+
+article {
+	header {
+		h2 {
+			font-family: 'Dancing Script', cursive;
+			font-size: 3em;
+		}
+	}
+}
+#wrapper-footer {
+	width: 100%;
+	height: 230px;
+	display: none;
+}
+
+
+
+.bg-inverse {
+	z-index: 1;
+	height: 150px;
+	background: rgba(255, 255, 255, 0);
+}
+
+.entry-header {
+	margin-top: -300px;
+	text-align: center;
+	color: white;
+}
+
+.edit-link {
+	display: none;
+}
+#welcome {
+	color: black;
+	margin-top: 200px;
+	font-size: 10em;
+}
+
+#log_forms {
+	width: 50vh;
+	text-align: center;
+	float: right;
+}
+
+.entry-content {
+	.logged-in {
+		font-size: 20px;
+		text-align: center;
+		color: white;
+		a {
+			color: white;
+		}
+	}
+}
+
+.navbar-toggle {
+	margin-top: 25px;
+	float: right;
+}
+@media (max-width: 570px) {
+	#main-menu:hover {
+		background-color: white;
+		opacity: 0.2;
+	}
+}
+
+.three_latest_posts {
+	width: 300px;
+	text-align: center;
+	ul {
+		margin: 0;
+		padding: 0;
+		display: inline;
+		text-align: center;
+	}
+
+	li {
+		display: inline;
+		list-style-type: none;
+		padding-right: 20px;	
+	}
+}

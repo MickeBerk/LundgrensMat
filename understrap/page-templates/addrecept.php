@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * Template Name: Lägg till recept
  *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
+ * Template for displaying a page där du kan lägga til recept
  *
  * @package understrap
  */
@@ -32,7 +32,7 @@ get_header(); ?>
                         <?php while ( have_posts() ) : the_post(); ?>
                             <?php
 
-            
+                            get_template_part( 'loop-templates/content-recept' ); 
 
                             get_template_part( 'loop-templates/content', get_post_format() );
                             
