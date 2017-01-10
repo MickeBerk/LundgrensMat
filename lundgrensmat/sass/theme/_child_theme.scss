@@ -19,16 +19,10 @@
 	height: 100px !important; 
 }
 
-.navbar-brand {
-	text-align: center;
-	margin-top: 20px;
-}
-
 #main-menu {
 	margin-top: 23px;
 	float: right !important;
 }
-
 
 .type-recept {
 	margin-top: 300px !important;
@@ -46,6 +40,8 @@
 .navbar-brand {
 	font-family: 'Dancing Script', cursive;
 	font-size: 1.8em;
+	float: left;
+	margin-top: 20px;
 }
 
 article {
@@ -104,28 +100,35 @@ article {
 
 .navbar-toggle {
 	margin-top: 25px;
-	float: right;
+	float: left;
 }
 @media (max-width: 570px) {
-	#main-menu:hover {
+	#main-menu {
 		background-color: white;
 		opacity: 0.2;
 	}
 }
 
-.three_latest_posts {
-	width: 300px;
-	text-align: center;
+#three_latest_posts {
 	ul {
 		margin: 0;
 		padding: 0;
 		display: inline;
-		text-align: center;
+		.each-recept {	
+			text-align: center;
+			list-style-type: none;
+			border-radius: 25px;
+			height: 160px;
+			padding: 10px;
+			width: 32%;
+			margin: 5px;
+			margin-top: 10px;
+			background-color: #F4F4F4;
+		}
 	}
 
 	li {
 		display: inline;
-		list-style-type: none;
-		padding-right: 20px;	
+		list-style-type: none;	
 	}
 }

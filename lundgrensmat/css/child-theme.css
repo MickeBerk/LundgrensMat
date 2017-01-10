@@ -7191,10 +7191,6 @@ a.skip-link {
 .bg-inverse {
   height: 100px !important; }
 
-.navbar-brand {
-  text-align: center;
-  margin-top: 20px; }
-
 #main-menu {
   margin-top: 23px;
   float: right !important; }
@@ -7211,7 +7207,9 @@ a.skip-link {
 
 .navbar-brand {
   font-family: 'Dancing Script', cursive;
-  font-size: 1.8em; }
+  font-size: 1.8em;
+  float: left;
+  margin-top: 20px; }
 
 article header h2 {
   font-family: 'Dancing Script', cursive;
@@ -7254,22 +7252,28 @@ article header h2 {
 
 .navbar-toggle {
   margin-top: 25px;
-  float: right; }
+  float: left; }
 
 @media (max-width: 570px) {
-  #main-menu:hover {
+  #main-menu {
     background-color: white;
     opacity: 0.2; } }
 
-.three_latest_posts {
-  width: 300px;
-  text-align: center; }
-  .three_latest_posts ul {
-    margin: 0;
-    padding: 0;
-    display: inline;
-    text-align: center; }
-  .three_latest_posts li {
-    display: inline;
+#three_latest_posts ul {
+  margin: 0;
+  padding: 0;
+  display: inline; }
+  #three_latest_posts ul .each-recept {
+    text-align: center;
     list-style-type: none;
-    padding-right: 20px; }
+    border-radius: 25px;
+    height: 160px;
+    padding: 10px;
+    width: 32%;
+    margin: 5px;
+    margin-top: 10px;
+    background-color: #F4F4F4; }
+
+#three_latest_posts li {
+  display: inline;
+  list-style-type: none; }
