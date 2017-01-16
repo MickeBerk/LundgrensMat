@@ -7206,13 +7206,13 @@ a.skip-link {
   box-shadow: 0px 6px 20px black; }
 
 .navbar-brand {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Cinzel Decorative', cursive;
   font-size: 1.8em;
   float: left;
   margin-top: 20px; }
 
 article header h2 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Cinzel Decorative', cursive;
   font-size: 3em; }
 
 #wrapper-footer {
@@ -7272,8 +7272,21 @@ article header h2 {
     width: 32%;
     margin: 5px;
     margin-top: 10px;
-    background-color: #F4F4F4; }
+    background-color: #F4F4F4;
+    animation: fadein 3s; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 #three_latest_posts li {
   display: inline;
   list-style-type: none; }
+
+#wrapper-footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #52C958; }

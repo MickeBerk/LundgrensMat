@@ -3,6 +3,7 @@
  * @package understrap
  */
 ?>
+<?php acf_form_head(); ?>
 <div class="add-recept">
 	<?php  
 		acf_form( $options = array(

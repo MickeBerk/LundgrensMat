@@ -26,6 +26,7 @@
 			?>
 			<?php the_content(); ?>
 					<img src="<?php the_field('receptbilder'); ?>" alt="" />
+					<p><strong>Receptbeskrivning: </strong><?php the_field('receptbeskrivning'); ?></p>
 					<p><strong>Antal portioner: </strong><?php the_field('hur_manga_portioner'); ?></p>
 					<p><strong>Förberedelser: </strong><?php the_field('foreberedelser'); ?></p>
 					<p><strong>Tillagningstid: </strong><?php the_field('tillagningstid'); ?></p>
