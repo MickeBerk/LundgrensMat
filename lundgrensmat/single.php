@@ -16,42 +16,42 @@
                     <?php
 					$query = new WP_Query( array('post_type' => 'recept', 'posts_per_page' => 5 ) );
 					while ( have_posts() ) : the_post(); ?>
-					<?php the_title(); ?>
+					<h4><?php the_title(); ?></h4>
 					<div class="entry-content">
-			<?php		
-					// Detta visar featured image bilden
-    				if ( has_post_thumbnail() ) {
-      				the_post_thumbnail();
-    				}
-			?>
-			<?php the_content(); ?>
-					<img src="<?php the_field('receptbilder'); ?>" alt="" />
-					<p><strong>Receptbeskrivning: </strong><?php the_field('receptbeskrivning'); ?></p>
-					<p><strong>Antal portioner: </strong><?php the_field('hur_manga_portioner'); ?></p>
-					<p><strong>Förberedelser: </strong><?php the_field('foreberedelser'); ?></p>
-					<p><strong>Tillagningstid: </strong><?php the_field('tillagningstid'); ?></p>
-			<?php		
-			// Ingredienser
-			if( have_rows('ingredienser') ): ?>
-				<strong>Ingredienser: </strong>
-    			<ul>
-    				<?php while( have_rows('ingredienser') ): the_row(); ?>
-        			<li><?php the_sub_field('ingrediens'); ?></li>
-    			<?php endwhile; ?>
-    			</ul>
-			<?php endif; ?>
-			<?php 
-			// Gör så här
-			if( have_rows('gor_sa_har') ): ?>
-				<strong>Gör så här: </strong>
-    			<ul>
-    				<?php while( have_rows('gor_sa_har') ): the_row(); ?>
-        			<li><?php the_sub_field('steg'); ?></li>
-    			<?php endwhile; ?>
-    			</ul>
-				<?php endif; ?>
-		<?php endwhile; ?>
-		</div>
+						<?php		
+							// Detta visar featured image bilden
+			    			if ( has_post_thumbnail() ) {
+			      			the_post_thumbnail();
+			    			}
+						?>
+						<?php the_content(); ?>
+								<img class="recept-picture" src="<?php the_field('receptbilder'); ?>" alt="" />
+								<p><strong>Receptbeskrivning: </strong><?php the_field('receptbeskrivning'); ?></p>
+								<p><strong>Antal portioner: </strong><?php the_field('hur_manga_portioner'); ?></p>
+								<p><strong>Förberedelser: </strong><?php the_field('foreberedelser'); ?></p>
+								<p><strong>Tillagningstid: </strong><?php the_field('tillagningstid'); ?></p>
+						<?php		
+						// Ingredienser
+						if( have_rows('ingredienser') ): ?>
+							<strong>Ingredienser: </strong>
+			    			<ul>
+			    				<?php while( have_rows('ingredienser') ): the_row(); ?>
+			        			<li><?php the_sub_field('ingrediens'); ?></li>
+			    			<?php endwhile; ?>
+			    			</ul>
+						<?php endif; ?>
+						<?php 
+						// Gör så här
+						if( have_rows('gor_sa_har') ): ?>
+							<strong>Gör så här: </strong>
+			    			<ul>
+			    				<?php while( have_rows('gor_sa_har') ): the_row(); ?>
+			        			<li><?php the_sub_field('steg'); ?></li>
+			    			<?php endwhile; ?>
+			    			</ul>
+							<?php endif; ?>
+					<?php endwhile; ?>
+					</div>
 
                 </main><!-- #main -->
                 

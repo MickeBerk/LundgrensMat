@@ -13,7 +13,7 @@
 
 	<header class="page-header">
 
-		<h2 class="page-title"><?php _e( 'Nothing Found', 'understrap' ); ?></h2>
+		<h2 class="page-title"><?php _e( 'Här fanns det inget recept!', 'understrap' ); ?></h2>
 
 	</header><!-- .page-header -->
 
@@ -30,9 +30,8 @@
 
 		<?php else : ?>
 
-			<p><?php _e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'understrap' ); ?></p>
+			<p><?php _e( 'Den här familjen verkar inte ha lagt upp något recept än.' ); ?></p>
 
-			<?php get_search_form(); ?>
 
 		<?php endif; ?>
 

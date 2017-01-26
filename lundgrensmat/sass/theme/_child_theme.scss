@@ -145,6 +145,8 @@ article {
 
 div {
 	.wpalogin-notification {
+		font-family: 'Cinzel Decorative', cursive;
+		font-size: 1.3em !important;
 		margin: 0 auto;
 		width: 200px !important;
 		background-color: #2ECC71 !important;
@@ -170,10 +172,12 @@ div {
 .page-title {
 	text-align: center; 
 	padding: 10px 5px 30px 5px;
+	font-family: 'Cinzel Decorative', cursive;
 }
 
 .widget-area {
 	text-align: center;
+	margin-top: 50px;
 }
 
 .searchandfilter {
@@ -185,4 +189,44 @@ li {
 		margin-left: 70px;
 		padding: 7px;
 	}
+}
+
+#acf-form {
+	border: 1px solid #52c958;
+	border-radius: 10px;
+	padding: 5px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.recept-info {
+	text-align: center;
+	font-size: 2em;
+}
+
+.need-log-on {
+	text-align: center;
+	margin-top: 200px;
+}
+
+.form_style {
+	width: 30%;
+	margin: 0 auto;
+	border: none !important;
+}
+
+#post-0 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+h4 {
+	text-align: center;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 3em;
+	color: #52C958;
+}
+
+.recept-picture {
+	margin-bottom: 10px;
 }

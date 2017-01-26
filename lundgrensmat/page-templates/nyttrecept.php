@@ -12,13 +12,13 @@ get_header(); ?>
 <div class="wrapper" id="archive-wrapper"> 
     <div  id="content" class="container">
         <div class="row">
-
             <main id="main" class="site-main" role="main">
                       <?php if ( have_posts() ) : ?>
                         <?php /* Start the Loop */ ?>
                         <?php while ( have_posts() ) : the_post(); ?>                           
                             <?php global $user_ID; get_currentuserinfo(); ?>
                             <?php if($user_ID) { ?>
+                                <p class="recept-info">Här kan ni lägga till ett nytt recept!</p>
                                 <div class="add-recept">
                                     <?php  
                                         acf_form( $options = array(
@@ -32,17 +32,14 @@ get_header(); ?>
                                     ));?>
                                 </div>
                             <?php } else { ?>
-                                <h2>Du måste vara inloggad för denna sida</h2>
-                            <?php } ?>
-                            
+                                <h2 class="need-log-on">Du måste vara inloggad för denna sida.</h2>
+                            <?php } ?>     
                         <?php endwhile; ?>
                             <?php the_posts_navigation(); ?>
                         <?php else : ?>
                             <?php get_template_part( 'loop-templates/content', 'none' ); ?>
                         <?php endif; ?>
-            </main><!-- #main -->              
-    	    
-            
+            </main><!-- #main -->      
         </div> <!-- .row -->      
     </div><!-- Container end -->
 </div><!-- Wrapper end -->
