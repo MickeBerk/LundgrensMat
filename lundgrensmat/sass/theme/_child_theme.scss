@@ -29,7 +29,7 @@
 }
 
 #full-width-page-wrapper {
-	height: 900px;
+	height: 500px;
 }
 
 .navbar {
@@ -141,4 +141,48 @@ article {
 	padding: 0;
 	width: 100%;
 	background-color: #52C958; 
+}
+
+div {
+	.wpalogin-notification {
+		margin: 0 auto;
+		width: 200px !important;
+		background-color: #2ECC71 !important;
+		text-align: center !important;
+		border-radius: 60% !important;
+		border-color: #2ECC71 !important;
+		height: 100px !important;
+		p {
+			margin: 25px !important;
+			color: white;
+		}
+	}
+}
+
+.understrap-read-more-link {
+	display: none;
+}
+
+.comments-link {
+	display: none;
+}
+
+.page-title {
+	text-align: center; 
+	padding: 10px 5px 30px 5px;
+}
+
+.widget-area {
+	text-align: center;
+}
+
+.searchandfilter {
+	text-align: left;
+}
+
+li {
+	#ofkockar {
+		margin-left: 70px;
+		padding: 7px;
+	}
 }
