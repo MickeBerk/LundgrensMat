@@ -12,10 +12,10 @@
 			</div><!-- .entry-meta -->
 		<?php endif; ?>    
 	</header><!-- .entry-header -->
-       <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?> 
+	<p><?php the_field('receptbeskrivning'); ?></p>
 		<div class="entry-content">
 	            <?php
-	                the_excerpt();
+	              
 	            ?>
 			<?php
 				wp_link_pages( array(

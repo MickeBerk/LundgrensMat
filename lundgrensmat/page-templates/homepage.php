@@ -8,7 +8,8 @@
  */
 get_header(); ?>
 <div class="wrapper" id="full-width-page-wrapper">
-    <div  id="content" class="container-fluid">
+    <div id="content" class="container-fluid">
+        <div class="row">
         <div class="col-md-12 main-bg-wrapper">
             <div class="main-bg"></div>
         </div>        
@@ -24,19 +25,20 @@ get_header(); ?>
                 <?php endwhile; // end of the loop. ?>
             </main><!-- #main -->
 	    </div><!-- #primary -->
+        </div>
     </div><!-- Container end -->  
     <div class="container">
     <div class="row">
-            <div id="three_latest_posts" class="col-md-12">
+            <div id="three_latest_posts" class="col-xs-12 col-md-12">
                 <?php $posts = get_posts(array(
                         'posts_per_page'    => 3,
                         'post_type'         => 'recept'
                         ));
                     if( $posts ): ?>
-                        <ul>                              
+                        <ul class="col-xs-12">                              
                         <?php foreach( $posts as $post ):                                
                             setup_postdata( $post ); ?>
-                            <div class="each-recept col-md-4 col-xs-12">
+                            <div class="each-recept col-md-4">
                                 <li>
                                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
                                     <p><?php the_field('receptbeskrivning'); ?></p>

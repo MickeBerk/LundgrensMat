@@ -7195,6 +7195,9 @@ a.skip-link {
   margin-top: 23px;
   float: right !important; }
 
+.navbar-toggle {
+  float: right !important; }
+
 .type-recept {
   margin-top: 300px !important; }
 
@@ -7203,7 +7206,13 @@ a.skip-link {
 
 .navbar {
   background-color: #52C958 !important;
-  box-shadow: 0px 6px 20px black; }
+  box-shadow: 0px 1px 20px black; }
+
+#log-in-out-link {
+  margin-left: 4px;
+  margin-top: 7px; }
+  #log-in-out-link a:hover {
+    text-decoration: none; }
 
 .navbar-brand {
   font-family: 'Cinzel Decorative', cursive;
@@ -7254,16 +7263,26 @@ article header h2 {
   margin-top: 25px;
   float: left; }
 
-@media (max-width: 570px) {
-  #main-menu {
-    background-color: white;
-    opacity: 0.2; } }
+@media (max-width: 790px) {
+  #three_latest_posts {
+    padding-top: 15px; }
+  .each-recept {
+    width: 100% !important;
+    height: 100% !important; } }
+
+@media (max-width: 550px) {
+  #three_latest_posts {
+    padding-top: 200px; }
+  .each-recept {
+    width: 100% !important;
+    height: 100% !important; } }
 
 #three_latest_posts ul {
   margin: 0;
   padding: 0;
   display: inline; }
   #three_latest_posts ul .each-recept {
+    display: block;
     text-align: center;
     list-style-type: none;
     border-radius: 25px;
@@ -7273,6 +7292,7 @@ article header h2 {
     margin: 5px;
     margin-top: 10px;
     background-color: #F4F4F4;
+    overflow: hidden;
     animation: fadein 3s; }
 
 @keyframes fadein {
@@ -7291,20 +7311,6 @@ article header h2 {
   width: 100%;
   background-color: #52C958; }
 
-div .wpalogin-notification {
-  font-family: 'Cinzel Decorative', cursive;
-  font-size: 1.3em !important;
-  margin: 0 auto;
-  width: 200px !important;
-  background-color: #2ECC71 !important;
-  text-align: center !important;
-  border-radius: 60% !important;
-  border-color: #2ECC71 !important;
-  height: 100px !important; }
-  div .wpalogin-notification p {
-    margin: 25px !important;
-    color: white; }
-
 .understrap-read-more-link {
   display: none; }
 
@@ -7320,21 +7326,23 @@ div .wpalogin-notification {
   text-align: center;
   margin-top: 50px; }
 
-.searchandfilter {
-  text-align: left; }
-
 li #ofkockar {
   margin-left: 70px;
   padding: 7px; }
 
 #acf-form {
-  border: 1px solid #52c958;
+  border: 1px solid #52C958;
   border-radius: 10px;
   padding: 5px;
   width: 50%;
   margin: 0 auto; }
 
+@media (max-width: 770px) {
+  #acf-form {
+    width: 80%; } }
+
 .recept-info {
+  font-family: 'Cinzel Decorative', cursive;
   text-align: center;
   font-size: 2em; }
 
