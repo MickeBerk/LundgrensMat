@@ -20,7 +20,6 @@ function theme_enqueue_styles() {
 //Add login/logout link to naviagation menu
 function add_login_out_item_to_menu( $items, $args ){
 
-	//change theme location with your them location name
 	if( is_admin() ||  $args->theme_location != 'primary' )
 		return $items; 
 

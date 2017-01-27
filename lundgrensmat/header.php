@@ -21,33 +21,23 @@
 </head>
 
 <body <?php body_class(); ?>>
-
 <div id="page" class="hfeed site">
-    
     <!-- ******************* The Navbar Area ******************* -->
     <div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
-	
         <a class="skip-link screen-reader-text sr-only" href="#content"><?php _e( 'Skip to content', 'understrap' ); ?></a>
-
         <nav class="navbar navbar-dark bg-inverse site-navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement">
                 <div class="container">
-
                             <div class="navbar-header">
-
                                 <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-
                                   <button class="navbar-toggle hidden-sm-up" type="button" data-toggle="collapse" data-target=".exCollapsingNavbar">
                                     <span class="sr-only">Toggle navigation</span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
                                     <span class="icon-bar"></span>
-                                </button>
-
+                                  </button>
                                 <!-- Your site title as branding in the menu -->
                                 <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-
                             </div>
-
                             <!-- The WordPress Menu goes here -->
                             <?php wp_nav_menu(
                                     array(
@@ -59,17 +49,7 @@
                                         'walker' => new wp_bootstrap_navwalker()
                                     )
                             ); ?>
-
                 </div> <!-- .container -->
-                
-            
         </nav><!-- .site-navigation -->
-                        <div class="col-md-12 header-image"></div>            
-
-    </div><!-- .wrapper-navbar end -->
-
-
-
-
-
-
+        <div class="col-md-12 header-image"></div>            
+</div><!-- .wrapper-navbar end -->

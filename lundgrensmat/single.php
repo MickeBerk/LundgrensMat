@@ -52,17 +52,9 @@
 							<?php endif; ?>
 					<?php endwhile; ?>
 					</div>
-
                 </main><!-- #main -->
-                
             </div><!-- #primary -->
-        
         <?php get_sidebar(); ?>
-
         </div><!-- .row -->
-        
     </div><!-- Container end -->
-    
 </div><!-- Wrapper end -->
-
-<?php /* get_footer(); */ ?>
